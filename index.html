@@ -32,16 +32,11 @@
             font-weight: bold;
             color: #d9534f;
         }
-        .warning-note {
-            margin-top: 15px;
-            padding: 15px;
-            border: 2px solid #ffc107; /* Amarillo para advertencia */
-            background-color: #fff3cd; /* Fondo claro de advertencia */
-            color: #856404;
-            border-radius: 5px;
-        }
-        .warning-note strong {
-            color: #856404;
+        .warning-text {
+            color: #d9534f; /* Rojo para destacar la advertencia */
+            font-weight: bold;
+            display: block; /* Para que aparezca en una nueva línea dentro de la celda */
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -74,16 +69,17 @@
             </tr>
             <tr>
                 <td><strong>Recargos por Impago</strong></td>
-                <td>Si no se abona en plazo, la Seguridad Social aplica recargos (generalmente 10% el primer mes).</td>
+                <td>
+                    <p>Si no se abona en plazo, la Seguridad Social aplica recargos (generalmente 10% el primer mes).</p>
+                    <p class="warning-text">
+                        ⚠️ ¡ATENCIÓN TARIAFA PLANA!
+                        <br>
+                        El impago provoca la **pérdida automática** del beneficio. Se le cobrará la cuota completa retroactiva (aprox. 325 €/mes) y no podrá retomar la tarifa plana hasta que se abone la deuda anterior.
+                    </p>
+                </td>
             </tr>
         </tbody>
     </table>
-    
-    <div class="warning-note">
-        <strong>⚠️ Importante sobre la Tarifa Plana:</strong> 
-        <br>
-        En caso de impago de la Tarifa Plana, el autónomo perderá automáticamente este beneficio. Se le cobrará la <span class="highlight">cuota completa retroactiva (aprox. 325 €/mes)</span>, y no podrá volver a acogerse a la tarifa plana hasta que la deuda pendiente haya sido abonada.
-    </div>
 
 </body>
 </html>
